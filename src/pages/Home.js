@@ -12,7 +12,7 @@ function Home() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 800)
+    }, 1000)
   }, [])
   const [loading, setLoading] = useState(false);
 

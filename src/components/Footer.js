@@ -3,13 +3,25 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 // import FooterPic from '../images/footer.jpg'
 import { MDBIcon } from 'mdb-react-ui-kit';
 import footer_logo from "./om.webp";
-import { Modal, useModal, Button, Text } from "@nextui-org/react";
+import { Modal, Button, Text } from "@nextui-org/react";
 export default function Footer() {
 
 
 
-    const { setVisible, bindings } = useModal();
-    const { setVisible1, bindings1 } = useModal();
+    const [visible, setVisible] = React.useState(false);
+    const handler = () => setVisible(true);
+
+    const closeHandler = () => {
+        setVisible(false);
+        console.log("closed");
+    };
+    const [visible1, setVisible1] = React.useState(false);
+    const handler1 = () => setVisible1(true);
+
+    const closeHandler1 = () => {
+        setVisible1(false);
+        console.log("closed");
+    };
     return (
         <MDBFooter className='text-center text-lg-start text-white' style={{ background: "black" }}>
             <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
@@ -111,7 +123,7 @@ export default function Footer() {
             <div className='footer__height text-center p-4'>
                 <MDBContainer fluid>
                     <p className='text-white'>
-                        <Button light style={{ color: "white", margin: "auto" }} auto onPress={() => setVisible(true)}>
+                        <Button light style={{ color: "white", margin: "auto" }} auto onPress={handler}>
                             © 2023 All Rights Reserved
                         </Button>
 
@@ -121,11 +133,13 @@ export default function Footer() {
                         <div>
 
                             <Modal
+                                closeButton
                                 scroll
                                 width="600px"
                                 aria-labelledby="modal-title"
                                 aria-describedby="modal-description"
-                                {...bindings}
+                                open={visible}
+                                onClose={closeHandler}
                             >
                                 <Modal.Header>
                                     <Text id="modal-title" size={18}>
@@ -147,28 +161,27 @@ export default function Footer() {
                                     </Text>
                                 </Modal.Body>
                                 <Modal.Footer>
-                                    <Button auto flat color="error" onPress={() => setVisible(false)}>
+                                    <Button auto flat color="error" onPress={closeHandler}>
                                         Close
-                                    </Button>
-                                    <Button auto onPress={() => setVisible(false)}>
-                                        Agree
                                     </Button>
                                 </Modal.Footer>
                             </Modal>
                         </div>
                         <br />
 
-                        <Button light style={{ color: "white", margin: "auto" }} auto onPress={() => setVisible1(true)}>
+                        <Button light style={{ color: "white", margin: "auto" }} auto onPress={handler1}>
                             Privacy Policy
                         </Button>
                         <div>
 
                             <Modal
+                                closeButton
                                 scroll
                                 width="600px"
                                 aria-labelledby="modal-title"
                                 aria-describedby="modal-description"
-                                {...bindings1}
+                                open={visible1}
+                                onClose={closeHandler1}
                             >
                                 <Modal.Header>
                                     <Text id="modal-title" size={18}>
@@ -213,11 +226,8 @@ export default function Footer() {
                                     </Text>
                                 </Modal.Body>
                                 <Modal.Footer>
-                                    <Button auto flat color="error" onPress={() => setVisible1(false)}>
+                                    <Button auto flat color="error" onPress={closeHandler1}>
                                         Close
-                                    </Button>
-                                    <Button auto onPress={() => setVisible1(false)}>
-                                        Agree
                                     </Button>
                                 </Modal.Footer>
                             </Modal>

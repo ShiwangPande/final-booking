@@ -10,7 +10,7 @@ function Contact() {
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 500)
+        }, 1000)
     }, [])
     const [loading, setLoading] = useState(false);
 

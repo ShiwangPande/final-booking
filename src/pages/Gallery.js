@@ -27,7 +27,7 @@ function Gallery() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 800)
+    }, 1000)
   }, [])
   const [loading, setLoading] = useState(false);
   const [index, setIndex] = useState(-1);
