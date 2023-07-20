@@ -2,7 +2,6 @@ import "./home.css";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import om from "./om.svg";
-import kalsarpyog from "./kal-sarp-yog.png";
 import whatsapp from "./whatsapp-icon.svg";
 import phone from "./phone.svg";
 import shivling from "./img/shivling.webp";

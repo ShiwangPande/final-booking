@@ -1,5 +1,5 @@
 .temple {
-  background: url("./temple.png") no-repeat center center fixed;
+  background: url("./temple.webp") no-repeat center center fixed;
   background-size: cover;
   height: 86vh;
   background-size: contain;
@@ -46,7 +46,7 @@ p {
 }
 
 .puja_img {
-  background: url("./kal-sarp-yog.png") no-repeat center center;
+  background: url("./kal-sarp-yog.webp") no-repeat center center;
   background-size: cover;
   border-radius: 50% !important;
   width: 100px;
@@ -54,7 +54,7 @@ p {
   margin: 35px auto;
 }
 .mangal {
-  background: url("./mangal.jpeg") no-repeat center center;
+  background: url("./mangal.webp") no-repeat center center;
   background-size: cover;
   border-radius: 50% !important;
   width: 100px;
@@ -62,7 +62,7 @@ p {
   margin: 35px auto;
 }
 .navgrah {
-  background: url("./navgrah.jpg") no-repeat center center;
+  background: url("./navgrah.webp") no-repeat center center;
   background-size: cover;
   border-radius: 50% !important;
   width: 100px;
@@ -70,7 +70,7 @@ p {
   margin: 35px auto;
 }
 .rudrabhisekh {
-  background: url("./rudrabhisekh.jpg") no-repeat center center;
+  background: url("./rudrabhisekh.webp") no-repeat center center;
   background-size: cover;
   border-radius: 50% !important;
   width: 100px;
@@ -78,7 +78,7 @@ p {
   margin: 35px auto;
 }
 .chandak {
-  background: url("./chandak.jpeg") no-repeat center center;
+  background: url("./chandak.webp") no-repeat center center;
   background-size: cover;
   border-radius: 50% !important;
   width: 100px;
@@ -86,7 +86,7 @@ p {
   margin: 35px auto;
 }
 .mahamritunjya {
-  background: url("./mahamritunjya.jpeg") no-repeat center center;
+  background: url("./mahamritunjya.webp") no-repeat center center;
   background-size: cover;
   border-radius: 50% !important;
   width: 100px;
@@ -94,7 +94,7 @@ p {
   margin: 35px auto;
 }
 .pitra {
-  background: url("./img/pitra.jpeg") no-repeat center center;
+  background: url("./img/pitra.webp") no-repeat center center;
   background-size: cover;
   border-radius: 50% !important;
   width: 100px;
@@ -102,7 +102,7 @@ p {
   margin: 35px auto;
 }
 .mahakal {
-  background: url("./img/mahakal.jpg") no-repeat center center;
+  background: url("./img/mahakal.webp") no-repeat center center;
   background-size: cover;
   border-radius: 50% !important;
   width: 100px;
@@ -110,7 +110,7 @@ p {
   margin: 35px auto;
 }
 .kumbh {
-  background: url("./img/kubh.jpeg") no-repeat center center;
+  background: url("./img/kubh.webp") no-repeat center center;
   background-size: cover;
   border-radius: 50% !important;
   width: 100px;
@@ -118,7 +118,7 @@ p {
   margin: 35px auto;
 }
 .navgrah {
-  background: url("./navgrah.jpg") no-repeat center center;
+  background: url("./navgrah.webp") no-repeat center center;
   background-size: cover;
   border-radius: 50% !important;
   width: 100px;
@@ -179,7 +179,7 @@ button {
 .img_manishji {
   width: 350px;
   padding-top: 20px;
-  background: url("./img/manish.png") no-repeat center center;
+  background: url("./img/manish.webp") no-repeat center center;
   background-size: cover;
   /* border-radius: 50% !important; */
   width: 500px;
@@ -378,7 +378,7 @@ button {
   .img_manishji {
     width: 200px;
     margin: auto;
-    background: url("./img/manish.png") no-repeat center center;
+    background: url("./img/manish.webp") no-repeat center center;
     background-size: cover;
     border-radius: 50% !important;
 
