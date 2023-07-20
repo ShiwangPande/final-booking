@@ -21,7 +21,7 @@
     margin: auto;
     display: flex;
     position: absolute;
-    top: 25%;
+    top: 20%;
     left: 25%;
     animation: out 0.8s ease-in-out;
   }
