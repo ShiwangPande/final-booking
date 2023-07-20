@@ -42,7 +42,7 @@ function Contact() {
                                 <div class="row justify-content-center my-5">
                                     <div class="col-lg-6">
                                         <form
-                                            action="https://formsubmit.co/shiwangpande1@gmail.com"
+                                            action="https://formsubmit.co/manishvyas73@gmail.com"
                                             method="POST"
                                         >
                                             <div class="form-floating my-5">
