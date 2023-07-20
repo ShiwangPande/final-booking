@@ -91,7 +91,7 @@ function Contact() {
                                             <div class="text-center">
                                                 <button type="submit" class="btn" style={{ backgroundColor: "#fa4c02", color: "white" }} >Send!</button>
                                                 <input type="hidden" name="_next"
-                                                    value="https://mesathank.netlify.app/" />
+                                                    value="https://final-booking-thank-you.vercel.app/" />
                                             </div>
                                         </form>
                                     </div>
