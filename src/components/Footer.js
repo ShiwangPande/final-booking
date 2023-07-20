@@ -2,7 +2,7 @@ import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 // import FooterPic from '../images/footer.jpg'
 import { MDBIcon } from 'mdb-react-ui-kit';
-import footer_logo from "./om.png";
+import footer_logo from "./om.webp";
 import { Modal, useModal, Button, Text } from "@nextui-org/react";
 export default function Footer() {
 

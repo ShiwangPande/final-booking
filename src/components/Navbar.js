@@ -10,7 +10,7 @@ import ButtonGroup from 'react-bootstrap/ButtonGroup';
 import ToggleButton from 'react-bootstrap/ToggleButton';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import "./navbar.css";
-import logo from "./om.png";
+import logo from "./om.webp";
 function NavBar() {
     const [checked, setChecked] = useState(false);
     const [radioValue, setRadioValue] = useState('1');
