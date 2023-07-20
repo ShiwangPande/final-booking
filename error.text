@@ -1,0 +1,57 @@
+[16:11:52.801] Running build in Washington, D.C., USA (East) – iad1
+[16:11:52.863] Cloning github.com/ShiwangPande/final-booking (Branch: main, Commit: 0237c73)
+[16:11:53.163] Previous build cache not available
+[16:11:53.551] Cloning completed: 687.602ms
+[16:11:53.945] Running "vercel build"
+[16:11:54.453] Vercel CLI 31.0.4
+[16:11:55.020] Installing dependencies...
+[16:11:56.852] npm notice 
+[16:11:56.852] npm notice New minor version of npm available! 9.5.1 -> 9.8.1
+[16:11:56.852] npm notice Changelog: <https://github.com/npm/cli/releases/tag/v9.8.1>
+[16:11:56.852] npm notice Run `npm install -g npm@9.8.1` to update!
+[16:11:56.852] npm notice 
+[16:11:56.853] npm ERR! code ERESOLVE
+[16:11:56.856] npm ERR! ERESOLVE could not resolve
+[16:11:56.856] npm ERR! 
+[16:11:56.856] npm ERR! While resolving: @material-ui/core@5.0.0-beta.5
+[16:11:56.856] npm ERR! Found: @types/react@18.2.15
+[16:11:56.856] npm ERR! node_modules/@types/react
+[16:11:56.856] npm ERR!   peerOptional @types/react@"*" from @material-ui/types@6.0.2
+[16:11:56.857] npm ERR!   node_modules/@material-ui/types
+[16:11:56.857] npm ERR!     @material-ui/types@"6.0.2" from @material-ui/core@5.0.0-beta.5
+[16:11:56.858] npm ERR!     node_modules/@material-ui/core
+[16:11:56.858] npm ERR!       @material-ui/core@"^5.0.0-beta.5" from the root project
+[16:11:56.858] npm ERR!     @material-ui/types@"6.0.2" from @material-ui/system@5.0.0-beta.5
+[16:11:56.858] npm ERR!     node_modules/@material-ui/system
+[16:11:56.859] npm ERR!       @material-ui/system@"5.0.0-beta.5" from @material-ui/core@5.0.0-beta.5
+[16:11:56.859] npm ERR!       node_modules/@material-ui/core
+[16:11:56.859] npm ERR!         @material-ui/core@"^5.0.0-beta.5" from the root project
+[16:11:56.859] npm ERR!   peerOptional @types/react@"^17.0.0 || ^18.0.0" from @mui/base@5.0.0-beta.8
+[16:11:56.859] npm ERR!   node_modules/@mui/base
+[16:11:56.859] npm ERR!     @mui/base@"5.0.0-beta.8" from @mui/material@5.14.1
+[16:11:56.859] npm ERR!     node_modules/@mui/material
+[16:11:56.859] npm ERR!       @mui/material@"^5.14.1" from the root project
+[16:11:56.860] npm ERR!   10 more (@mui/material, @mui/private-theming, @mui/system, ...)
+[16:11:56.860] npm ERR! 
+[16:11:56.860] npm ERR! Could not resolve dependency:
+[16:11:56.860] npm ERR! peerOptional @types/react@"^16.8.6 || ^17.0.0" from @material-ui/core@5.0.0-beta.5
+[16:11:56.860] npm ERR! node_modules/@material-ui/core
+[16:11:56.860] npm ERR!   @material-ui/core@"^5.0.0-beta.5" from the root project
+[16:11:56.861] npm ERR! 
+[16:11:56.861] npm ERR! Conflicting peer dependency: @types/react@17.0.62
+[16:11:56.861] npm ERR! node_modules/@types/react
+[16:11:56.861] npm ERR!   peerOptional @types/react@"^16.8.6 || ^17.0.0" from @material-ui/core@5.0.0-beta.5
+[16:11:56.861] npm ERR!   node_modules/@material-ui/core
+[16:11:56.861] npm ERR!     @material-ui/core@"^5.0.0-beta.5" from the root project
+[16:11:56.861] npm ERR! 
+[16:11:56.861] npm ERR! Fix the upstream dependency conflict, or retry
+[16:11:56.861] npm ERR! this command with --force or --legacy-peer-deps
+[16:11:56.861] npm ERR! to accept an incorrect (and potentially broken) dependency resolution.
+[16:11:56.861] npm ERR! 
+[16:11:56.861] npm ERR! 
+[16:11:56.861] npm ERR! For a full report see:
+[16:11:56.862] npm ERR! /vercel/.npm/_logs/2023-07-20T10_41_55_362Z-eresolve-report.txt
+[16:11:56.862] 
+[16:11:56.862] npm ERR! A complete log of this run can be found in:
+[16:11:56.862] npm ERR!     /vercel/.npm/_logs/2023-07-20T10_41_55_362Z-debug-0.log
+[16:11:56.880] Error: Command "npm install" exited with 1
