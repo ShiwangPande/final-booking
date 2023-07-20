@@ -2,32 +2,14 @@ import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol } from 'mdb-react-ui-kit';
 // import FooterPic from '../images/footer.jpg'
 import { MDBIcon } from 'mdb-react-ui-kit';
-import Dialog from "@material-ui/core/Dialog";
-import DialogContentText from "@material-ui/core/DialogContentText";
-import DialogTitle from "@material-ui/core/DialogTitle";
-import DialogActions from "@material-ui/core/DialogActions";
-import DialogContent from "@material-ui/core/DialogContent";
-import Button from "@material-ui/core/Button";
 import footer_logo from "./om.png";
+import { Modal, useModal, Button, Text } from "@nextui-org/react";
 export default function Footer() {
-    const [open, setOpen] = React.useState(false);
 
-    const handleClickToOpen = () => {
-        setOpen(true);
-    };
 
-    const handleToClose = () => {
-        setOpen(false);
-    };
-    const [open1, setOpen1] = React.useState(false);
 
-    const handleClickToOpen1 = () => {
-        setOpen1(true);
-    };
-
-    const handleToClose1 = () => {
-        setOpen1(false);
-    };
+    const { setVisible, bindings } = useModal();
+    const { setVisible1, bindings1 } = useModal();
     return (
         <MDBFooter className='text-center text-lg-start text-white' style={{ background: "black" }}>
             <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
@@ -129,85 +111,127 @@ export default function Footer() {
             <div className='footer__height text-center p-4'>
                 <MDBContainer fluid>
                     <p className='text-white'>
-                        <Button variant="none" style={{ color: 'white' }}
-                            onClick={handleClickToOpen}>
+                        <Button light style={{ color: "white", margin: "auto" }} auto onPress={() => setVisible(true)}>
                             © 2023 All Rights Reserved
                         </Button>
-                        <Dialog open={open} onClose={handleToClose}>
-                            <DialogTitle>{"© 2023 All Rights Reserved"}</DialogTitle>
-                            <DialogContent>
-                                <DialogContentText>
-                                    Copyright for aश्री कामना पूर्ति अनुष्ठान केंद्र website for puja:
-                                    <br />
-                                    "All rights reserved. This website and its content are protected by copyright laws. The text, images, graphics, and other materials on this website are the intellectual property of [Temple Name]. No part of this website may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the copyright owner.
-                                    <br />
-                                    This website is intended for informational purposes and personal use only. Any unauthorized use of the materials on this website may violate copyright laws and other applicable laws.
-                                    <br />
-                                    For inquiries regarding the use of the content on this website or to obtain permission for any specific use, please contact [Temple Name] at [Contact Email/Phone]."
-                                    <br />
-                                    Note: This is a general copyright statement. It is recommended to consult with legal professionals or experts to tailor it to your specific website and requirements.  </DialogContentText>
-                            </DialogContent>
-                            <DialogActions>
-                                <Button onClick={handleToClose}
-                                    color="primary" autoFocus>
-                                    Close
-                                </Button>
-                            </DialogActions>
-                        </Dialog> <br />
-                        <Button variant="none" style={{ color: 'white' }}
-                            onClick={handleClickToOpen1}>
+
+
+
+
+                        <div>
+
+                            <Modal
+                                scroll
+                                width="600px"
+                                aria-labelledby="modal-title"
+                                aria-describedby="modal-description"
+                                {...bindings}
+                            >
+                                <Modal.Header>
+                                    <Text id="modal-title" size={18}>
+                                        © 2023 All Rights Reserved
+                                    </Text>
+                                </Modal.Header>
+                                <Modal.Body>
+                                    <Text id="modal-description">
+                                        Copyright for aश्री कामना पूर्ति अनुष्ठान केंद्र website for puja:
+                                        <br />
+                                        "All rights reserved. This website and its content are protected by copyright laws. The text, images, graphics, and other materials on this website are the intellectual property of [Temple Name]. No part of this website may be reproduced, distributed, or transmitted in any form or by any means, without the prior written permission of the copyright owner.
+                                        <br />
+                                        This website is intended for informational purposes and personal use only. Any unauthorized use of the materials on this website may violate copyright laws and other applicable laws.
+                                        <br />
+                                        For inquiries regarding the use of the content on this website or to obtain permission for any specific use, please contact [Temple Name] at [Contact Email/Phone]."
+                                        <br />
+                                        Note: This is a general copyright statement. It is recommended to consult with legal professionals or experts to tailor it to your specific website and requirements.
+
+                                    </Text>
+                                </Modal.Body>
+                                <Modal.Footer>
+                                    <Button auto flat color="error" onPress={() => setVisible(false)}>
+                                        Close
+                                    </Button>
+                                    <Button auto onPress={() => setVisible(false)}>
+                                        Agree
+                                    </Button>
+                                </Modal.Footer>
+                            </Modal>
+                        </div>
+                        <br />
+
+                        <Button light style={{ color: "white", margin: "auto" }} auto onPress={() => setVisible1(true)}>
                             Privacy Policy
                         </Button>
-                        <Dialog open={open1} onClose={handleToClose1}>
-                            <DialogTitle>{"Privacy Policy"}</DialogTitle>
-                            <DialogContent>
-                                <DialogContentText>
-                                    Privacy Policy for Mandir Temple Website for Puja
+                        <div>
 
-                                    At श्री कामना पूर्ति अनुष्ठान केंद्र, we respect your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard the information you provide to us through our website for puja services.
-                                    <br />
-                                    <h4> 1. Information Collection:</h4>
-                                    We may collect personal information from you when you voluntarily provide it during the puja booking process or when you contact us. This may include your name, contact details, email address, and any additional information you provide related to the puja requirements.
-                                    <br />
-                                    <h4> 2. Use of Information:</h4>
-                                    We use the collected information to process your puja bookings, communicate with you regarding the puja services, and provide you with the desired services. We may also use your information to improve our website, personalize your user experience, and send you relevant updates or promotional offers with your consent.
-                                    <br />
-                                    <h4> 3. Information Sharing:</h4>
-                                    We do not sell, trade, or transfer your personal information to third parties without your consent, except as necessary to fulfill your puja services or as required by law. We may share your information with trusted service providers who assist us in operating our website or conducting our business, as long as they agree to keep your information confidential.
-                                    <br />
-                                    <h4> 4. Data Security:</h4>
-                                    We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. We use secure technologies and encryption protocols to safeguard your data and maintain its confidentiality.
-                                    <br />
-                                    <h4> 5. Cookies and Tracking Technologies:</h4>
-                                    Our website may use cookies and similar tracking technologies to enhance your browsing experience, analyze website traffic, and personalize content. You have the option to accept or decline cookies, and you can modify your browser settings to disable cookies if desired. However, disabling cookies may affect the functionality and user experience of our website.
-                                    <br />
-                                    <h4>6. Third-Party Links:</h4>
-                                    Our website may contain links to third-party websites or services. We are not responsible for the privacy practices or content of those websites. We encourage you to review the privacy policies of any third-party sites you visit.
-                                    <br />
-                                    <h4>  7. Children's Privacy:</h4>
-                                    Our services are not directed towards individuals under the age of 18. We do not knowingly collect or solicit personal information from children. If we become aware that we have collected personal information from a child without parental consent, we will take steps to promptly delete that information.
-                                    <br />
-                                    <h4>   8. Changes to the Privacy Policy:</h4>
-                                    We may update this Privacy Policy from time to time. Any changes will be effective upon posting on our website. We encourage you to review this Privacy Policy periodically for any updates.
-                                    <br />
-                                    <h4>  9. Contact Us:</h4>
-                                    If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your personal information, please contact us through the provided contact details on our website.
-                                    <br />
-                                    By using our website and availing our puja services, you consent to the terms of this Privacy Policy and the collection, use, and storage of your personal information as described herein.</DialogContentText>
-                            </DialogContent>
-                            <DialogActions>
-                                <Button onClick={handleToClose1}
-                                    color="primary" autoFocus>
-                                    Close
-                                </Button>
-                            </DialogActions>
-                        </Dialog> <br />
+                            <Modal
+                                scroll
+                                width="600px"
+                                aria-labelledby="modal-title"
+                                aria-describedby="modal-description"
+                                {...bindings1}
+                            >
+                                <Modal.Header>
+                                    <Text id="modal-title" size={18}>
+                                        Privacy Policy
+                                    </Text>
+                                </Modal.Header>
+                                <Modal.Body>
+                                    <Text id="modal-description">
+                                        Privacy Policy for Mandir Temple Website for Puja
+
+                                        At श्री कामना पूर्ति अनुष्ठान केंद्र, we respect your privacy and are committed to protecting your personal information. This Privacy Policy outlines how we collect, use, and safeguard the information you provide to us through our website for puja services.
+                                        <br />
+                                        <h4> 1. Information Collection:</h4>
+                                        We may collect personal information from you when you voluntarily provide it during the puja booking process or when you contact us. This may include your name, contact details, email address, and any additional information you provide related to the puja requirements.
+                                        <br />
+                                        <h4> 2. Use of Information:</h4>
+                                        We use the collected information to process your puja bookings, communicate with you regarding the puja services, and provide you with the desired services. We may also use your information to improve our website, personalize your user experience, and send you relevant updates or promotional offers with your consent.
+                                        <br />
+                                        <h4> 3. Information Sharing:</h4>
+                                        We do not sell, trade, or transfer your personal information to third parties without your consent, except as necessary to fulfill your puja services or as required by law. We may share your information with trusted service providers who assist us in operating our website or conducting our business, as long as they agree to keep your information confidential.
+                                        <br />
+                                        <h4> 4. Data Security:</h4>
+                                        We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction. We use secure technologies and encryption protocols to safeguard your data and maintain its confidentiality.
+                                        <br />
+                                        <h4> 5. Cookies and Tracking Technologies:</h4>
+                                        Our website may use cookies and similar tracking technologies to enhance your browsing experience, analyze website traffic, and personalize content. You have the option to accept or decline cookies, and you can modify your browser settings to disable cookies if desired. However, disabling cookies may affect the functionality and user experience of our website.
+                                        <br />
+                                        <h4>6. Third-Party Links:</h4>
+                                        Our website may contain links to third-party websites or services. We are not responsible for the privacy practices or content of those websites. We encourage you to review the privacy policies of any third-party sites you visit.
+                                        <br />
+                                        <h4>  7. Children's Privacy:</h4>
+                                        Our services are not directed towards individuals under the age of 18. We do not knowingly collect or solicit personal information from children. If we become aware that we have collected personal information from a child without parental consent, we will take steps to promptly delete that information.
+                                        <br />
+                                        <h4>   8. Changes to the Privacy Policy:</h4>
+                                        We may update this Privacy Policy from time to time. Any changes will be effective upon posting on our website. We encourage you to review this Privacy Policy periodically for any updates.
+                                        <br />
+                                        <h4>  9. Contact Us:</h4>
+                                        If you have any questions, concerns, or requests regarding this Privacy Policy or the handling of your personal information, please contact us through the provided contact details on our website.
+                                        <br />
+                                        By using our website and availing our puja services, you consent to the terms of this Privacy Policy and the collection, use, and storage of your personal information as described herein.
+
+                                    </Text>
+                                </Modal.Body>
+                                <Modal.Footer>
+                                    <Button auto flat color="error" onPress={() => setVisible1(false)}>
+                                        Close
+                                    </Button>
+                                    <Button auto onPress={() => setVisible1(false)}>
+                                        Agree
+                                    </Button>
+                                </Modal.Footer>
+                            </Modal>
+                        </div>
+
+
+
+                        <br />
                         <a target={"_blank"} href="https://www.linkedin.com/in/shiwang-pandey-33a628221/">
                             <b className='text-white'>Designed And Developed by Shiwang Pandey</b>
                         </a>
                     </p>
                 </MDBContainer>
             </div>
-        </MDBFooter>
+        </MDBFooter >
     );
 }
