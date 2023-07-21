@@ -446,7 +446,7 @@ button {
   }
 }
 
-body {
+/* body {
   -webkit-text-size-adjust: none;
   color: #b2d665;
   font-size: 1em;
@@ -459,7 +459,7 @@ body {
   padding: 0px;
   background-color: #eee;
   overflow-x: hidden;
-}
+} */
 #Frames,
 .Frame {
   list-style: none;
