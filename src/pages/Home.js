@@ -134,8 +134,8 @@ function Home() {
               <div style={{ width: '20rem', "overflow": "hidden", "borderRadius": "0.5rem", "background": "linear-gradient(rgb(153, 27, 27),rgb(202, 138, 4),rgb(234, 179, 8))", "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" }}>
                 <div style={{ "padding": "1rem", "height": "20rem", backgroundSize: "cover", backgroundImage: "url('https://i.postimg.cc/nr0W7R8w/mahakaleshwar-1.jpg')" }}></div>
                 <div className="p-4 card_content ">
-                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "white" }}>रूद्राभिषेक</h1>
-                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "white" }}>"रूद्राभिषेक पूजा: देवगणों के रुद्र स्वरूप भगवान शिव को अभिषिंचन एवं आराधना का पवित्र अनुष्ठान।"</p>
+                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "black" }}>रूद्राभिषेक</h1>
+                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "black" }}>"रूद्राभिषेक पूजा: देवगणों के रुद्र स्वरूप भगवान शिव को अभिषिंचन एवं आराधना का पवित्र अनुष्ठान।"</p>
 
                   <div class="frame">
                     <Button className="button_more custom-btn" onPress={handler2} style={{ borderRadius: "0", fontSize: "15px", width: "100%" }}>
@@ -239,8 +239,8 @@ function Home() {
               <div style={{ width: '20rem', "overflow": "hidden", "borderRadius": "0.5rem", "background": "linear-gradient(rgb(153, 27, 27),rgb(202, 138, 4),rgb(234, 179, 8))", "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" }}>
                 <div style={{ "padding": "1rem", "height": "20rem", backgroundSize: "cover", backgroundImage: "url('https://i.postimg.cc/tgbx31vx/kaalsarp.jpg')" }}></div>
                 <div className="p-4 card_content ">
-                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "white" }}>कालसर्प दोष शांति</h1>
-                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "white" }}>"रूद्राभिषेक पूजा: देवगणों के रुद्र स्वरूप भगवान शिव को अभिषिंचन एवं आराधना का पवित्र अनुष्ठान।"</p>
+                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "black" }}>कालसर्प दोष शांति</h1>
+                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "black" }}>"रूद्राभिषेक पूजा: देवगणों के रुद्र स्वरूप भगवान शिव को अभिषिंचन एवं आराधना का पवित्र अनुष्ठान।"</p>
 
                   <div class="frame">
                     <Button className="button_more custom-btn" onPress={handler1} style={{ borderRadius: "0", fontSize: "15px", width: "100%" }}>
@@ -320,8 +320,8 @@ function Home() {
               <div style={{ width: '20rem', "overflow": "hidden", "borderRadius": "0.5rem", "background": "linear-gradient(rgb(153, 27, 27),rgb(202, 138, 4),rgb(234, 179, 8))", "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" }}>
                 <div style={{ "padding": "1rem", "height": "20rem", backgroundSize: "cover", backgroundImage: "url('https://i.postimg.cc/SR3NQ5zh/magal-1.jpg')" }}></div>
                 <div className="p-4 card_content ">
-                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "white" }}> मंगल ग्रह</h1>
-                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "white" }}>
+                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "black" }}> मंगल ग्रह</h1>
+                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "black" }}>
                     "मंगल ग्रह पूजा में आदित्यं सूर्यं संरक्षेत्।
                     <br /> विघ्नहर्ता गणेशं प्रणमेत्।
                     <br /> सौम्यं सुमङ्गलं कुरु सर्वदा॥"</p>
@@ -416,8 +416,8 @@ function Home() {
               <div style={{ width: '20rem', "overflow": "hidden", "borderRadius": "0.5rem", "background": "linear-gradient(rgb(153, 27, 27),rgb(202, 138, 4),rgb(234, 179, 8))", "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" }}>
                 <div style={{ "padding": "1rem", "height": "20rem", backgroundSize: "cover", backgroundImage: "url('https://i.postimg.cc/FFgNzD2m/kaamnapurti.jpg')" }}></div>
                 <div className="p-4 card_content ">
-                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "white" }}> कामना पूर्ति अनुष्ठान</h1>
-                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "white" }}>
+                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "black" }}> कामना पूर्ति अनुष्ठान</h1>
+                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "black" }}>
                     "सर्वेभ्यः सुखिनो भवन्तु।
                     <br />विद्वत्सञ्चयाय चरणौ वन्दे।
                     <br />  कामना पूर्त्यर्थं अनुष्ठानं कुरुमः।।"</p>
@@ -501,8 +501,8 @@ function Home() {
               <div style={{ width: '20rem', "overflow": "hidden", "borderRadius": "0.5rem", "background": "linear-gradient(rgb(153, 27, 27),rgb(202, 138, 4),rgb(234, 179, 8))", "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" }}>
                 <div style={{ "padding": "1rem", "height": "20rem", backgroundSize: "cover", backgroundImage: "url('https://i.postimg.cc/kXBWN1W3/kumbh-1.jpg')" }}></div>
                 <div className="p-4 card_content ">
-                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "white" }}> कुम्भ/अर्क विवाह</h1>
-                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "white" }}>
+                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "black" }}> कुम्भ/अर्क विवाह</h1>
+                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "black" }}>
                     "कुम्भ/अर्क विवाह पूजा एक पवित्र अनुष्ठान है, जिसमें दो प्राकृतिक तत्वों के आदर्श संयोग के लिए ईश्वरीय आशीर्वाद लिया जाता है।"</p>
 
                   <div class="frame">
@@ -577,8 +577,8 @@ function Home() {
               <div style={{ width: '20rem', "overflow": "hidden", "borderRadius": "0.5rem", "background": "linear-gradient(rgb(153, 27, 27),rgb(202, 138, 4),rgb(234, 179, 8))", "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" }}>
                 <div style={{ "padding": "1rem", "height": "20rem", backgroundSize: "cover", backgroundImage: "url('https://i.postimg.cc/Y9DJ4r5m/pitra-1.jpg')" }}></div>
                 <div className="p-4 card_content ">
-                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "white" }}>पितृदोष शांति पूजन</h1>
-                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "white" }}>
+                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "black" }}>पितृदोष शांति पूजन</h1>
+                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "black" }}>
                     "कुम्भ/अर्क विवाह पूजा एक पवित्र अनुष्ठान है, जिसमें दो प्राकृतिक तत्वों के आदर्श संयोग के लिए ईश्वरीय आशीर्वाद लिया जाता है।"</p>
 
                   <div class="frame">
@@ -692,8 +692,8 @@ function Home() {
               <div style={{ width: '20rem', "overflow": "hidden", "borderRadius": "0.5rem", "background": "linear-gradient(rgb(153, 27, 27),rgb(202, 138, 4),rgb(234, 179, 8))", "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" }}>
                 <div style={{ "padding": "1rem", "height": "20rem", backgroundSize: "cover", backgroundImage: "url('https://i.postimg.cc/9XsJM88M/nagnagbali-2.jpg')" }}></div>
                 <div className="p-4 card_content ">
-                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "white" }}>नागवली/नारायणवली पूजन</h1>
-                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "white" }}>
+                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "black" }}>नागवली/नारायणवली पूजन</h1>
+                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "black" }}>
                     "नागवली/नारायणवली पूजनं नागराजाय विधिवत्।
                     <br /> पापानां नाशाय चैव वृष्ट्या वर्षति शान्तये॥"</p>
 
@@ -765,8 +765,8 @@ function Home() {
               <div style={{ width: '20rem', "overflow": "hidden", "borderRadius": "0.5rem", "background": "linear-gradient(rgb(153, 27, 27),rgb(202, 138, 4),rgb(234, 179, 8))", "boxShadow": "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)" }}>
                 <div style={{ "padding": "1rem", "height": "20rem", backgroundSize: "cover", backgroundImage: "url('https://i.postimg.cc/tC6c3ZY9/mahamrityunjaypuja-1.jpg')" }}></div>
                 <div className="p-4 card_content ">
-                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "white" }}>महामृत्युंजय मंत्र अनुष्‍ठान</h1>
-                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "white" }}>
+                  <h1 style={{ "fontSize": "1.25rem", "lineHeight": "1.75rem", "fontWeight": 700, color: "black" }}>महामृत्युंजय मंत्र अनुष्‍ठान</h1>
+                  <p style={{ "marginTop": ["0.5rem", "0.5rem"], "marginBottom": "0.5rem", color: "black" }}>
                     "महामृत्युंजय मंत्रस्य अनुष्ठानम्।
                     <br /> सर्वारोगनिवृत्तिदायकः।
                     <br /> आरोग्यं सुखं च समृद्धिं च ददाति॥"</p>
