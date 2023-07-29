@@ -8,6 +8,8 @@ import React, { useEffect, useState, useRef } from 'react';
 import Loader from '../components/Loader';
 import { Col, Text, gray } from "@nextui-org/react";
 import { Modal, useModal, Button, Image } from "@nextui-org/react";
+import Popup from './Popup';
+import finger from "./finger.svg";
 function Home() {
   useEffect(() => {
     setLoading(true);
@@ -78,7 +80,13 @@ function Home() {
     setIsShowMore(!isShowMore);
   };
   const [loading, setLoading] = useState(false);
+  const [timedPopup, setTimedPopup] = useState(false);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setTimedPopup(true);
+    }, 1000);
+  }, []);
   return (
     <>
       {loading ?
@@ -99,6 +107,7 @@ function Home() {
           <div className='temple'>
           </div>
           <img className='om' src={om} alt="" />
+
 
           <div className='about'>
             {/* <div /> */}
@@ -844,6 +853,37 @@ function Home() {
 
             </div>
           </div>
+          <Popup trigger={timedPopup} setTrigger={setTimedPopup}>
+            <br />
+            <br />
+            <h1>"पंडित मनीष चंद्रशेखर व्यास से संपर्क करें और अभी उन्हें कॉल करें!"
+            </h1>
+            <hr />
+
+            {/* <button onClick={() => { setTimedPopup(false) }} style={{ borderRadius: "none", pointer: "cursor" }}> */}
+            <div >
+              {/* <img src="https://i.postimg.cc/FH82tM1V/manish.jpg" alt="" style={{ width: "300px", height: "300px", margin: "auto" }} /> */}
+              <div style={{ textAlign: "center", display: "flex", flexDirection: "row", justifyContent: "space-around" }}>
+                <img style={{ width: "100px" }} src={finger} alt="" />
+                <div>
+                  <div class="frame">
+                    <a href="https://wa.me/9754458233">   <button class="custom-btn btn-7 butt"><span>
+                      <img src={whatsapp} alt="" /> Chat Now</span></button></a>
+                  </div>
+                  {/* <br /> */}
+                  <br />  <div class="frame">
+                    <a href="tel:9754458233">   <button class="custom-btn btn-7 butt-1"><span>
+                      <img src={phone} alt="" /> 9754458233</span></button></a>
+                  </div>
+                </div>
+                <img style={{ width: "100px", transform: "rotateY(180deg)" }} src={finger} alt="" />
+
+              </div>
+
+            </div>
+            {/* </button> */}
+          </Popup>
+          {/* <Footer /> */}
         </div >
       }
     </>

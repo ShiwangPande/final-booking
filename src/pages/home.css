@@ -614,3 +614,34 @@ button {
     padding: 20px;
   }
 }
+
+.butt {
+  transition: transform 0.2s ease-in-out;
+  animation: clickAnimation 3.5s ease-in-out infinite;
+}
+.butt-1 {
+  transition: transform 0.2s ease-in-out;
+  animation: clickAnimation1 4s ease-in-out infinite;
+}
+@keyframes clickAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes clickAnimation1 {
+  0% {
+    transform: scale(1.2);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
