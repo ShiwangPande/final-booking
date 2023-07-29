@@ -85,7 +85,7 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setTimedPopup(true);
-    }, 1000);
+    }, 8000);
   }, []);
   return (
     <>
